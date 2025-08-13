@@ -25,11 +25,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d "\"\, )/hugo_extended_$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d "\"\, )_linux-amd64.deb
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.128.2/hugo_extended_0.128.2_linux-amd64.deb
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: |
-          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/$(curl -s https://api.github.com/repos/sass/dart-sass/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d "\"\, )/dart-sass-$(curl -s https://api.github.com/repos/sass/dart-sass/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d "\"\, )-linux-x64.tar.gz
+          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.77.0/dart-sass-1.77.0-linux-x64.tar.gz
           tar -xf ${{ runner.temp }}/dart-sass.tar.gz --directory ${{ runner.temp }}
           mv ${{ runner.temp }}/dart-sass/ /usr/local/bin
           echo "/usr/local/bin/dart-sass" >> $GITHUB_PATH
