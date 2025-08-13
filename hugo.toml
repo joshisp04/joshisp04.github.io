@@ -1,0 +1,4 @@
+baseURL = 'https://joshisp04.github.io/'
+languageCode = 'en-us'
+title = 'My Portfolio'
+theme = 'coder'
