@@ -5,7 +5,7 @@ theme = 'coder'
 
 [params]
   author = "Shrikrishna Joshi"
-  info = "Backend Developer"
+  info = "Robotics Engineer"
   description = "Shrikrishna Joshi's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
@@ -13,7 +13,7 @@ theme = 'coder'
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2025
 
   enableTwemoji = true
 
